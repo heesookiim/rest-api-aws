@@ -11,8 +11,8 @@ router.post('/', async (req, res) => {
       message: 'Package created successfully',
       package: packageData
     });
-  } catch (error) {
-    res.status(500).json({ message: "An error occurred", error: error.message });
+  } catch {
+    res.status(500).json({ message: "An error occurred",});
   }
 });
 
